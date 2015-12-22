@@ -1,4 +1,6 @@
 {
   "slashCommandToken": "YOUR_TOKEN_FROM_SLACK_SLASH_COMMAND_INTEGRATION",
-  "gmailPassword": "YOUR_GMAIL_ACCOUNT_PASSWORD"
+  "gmailPassword": "YOUR_GMAIL_ACCOUNT_PASSWORD",
+  "senderAddress": "YOUR_SENDER_ADDRESS",
+  "receiverAddresses": "COMMA_SEPERATED_LIST_OF_RECEIVER_ADDRESSES"
 }

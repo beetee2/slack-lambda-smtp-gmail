@@ -1,0 +1,16 @@
+{
+  "name": "slack-lambda-smtp-gmail",
+  "version": "0.1.0",
+  "description": "Serverless slack integration using AWS Lambda and Slash Commands",
+  "main": "index.js",
+  "author": "Brad Tate <brad.tate@gmail.com>",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "nodemailer": "^1.10.0",
+    "nodemailer-smtp-transport": "^1.0.4",
+    "request-promise": "^0.4.3"
+  },
+  "devDependencies": {
+    "proxyquire": "~1.7.2"
+  }
+}

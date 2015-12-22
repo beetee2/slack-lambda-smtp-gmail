@@ -1,5 +1,4 @@
 var config = require('./config.json');
-// var weather = require('./lib/weather.js');
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 
@@ -31,16 +30,16 @@ exports.handler = function(event, context) {
     port: 465,
     secure: true,
     auth: {
-        user: 'dev6.alamode', // Your email id
+        user: config.senderAddress, // Your email id
         pass: config.gmailPassword // Your password
     }
 }));
 
   var mailOptions = {
-      from: 'dev6.alamode@gmail.com', // sender address
-      to: 'brad.tate@gmail.com', // list of receivers
-      subject: 'Production Rollback', // Subject line
-      text: message //, // plaintext body
+      from: config.senderAddress,
+      to: config.receiverAddresses,
+      subject: 'Production Rollback',
+      text: message // plaintext body
       // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
   };
 
